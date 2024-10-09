@@ -1,0 +1,30 @@
+{
+  "name": "github-discord-webhook",
+  "version": "1.0.0",
+  "description": "Customize commit messages for your discord channels",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/server.cjs",
+    "clean": "rimraf dist",
+    "build": "npm run clean && babel src --out-dir dist && esbuild dist/**/*.js --minify --allow-overwrite --outdir=dist --out-extension:.js=.cjs"
+  },
+  "keywords": [],
+  "author": "FrankkC24",
+  "license": "ISC",
+  "dependencies": {
+    "@types/body-parser": "^1.19.5",
+    "axios": "^1.7.7",
+    "body-parser": "^1.20.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.25.7",
+    "@babel/core": "^7.25.7",
+    "@babel/preset-env": "^7.25.7",
+    "@types/express": "^5.0.0",
+    "esbuild": "^0.24.0",
+    "rimraf": "^6.0.1"
+  }
+}
