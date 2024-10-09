@@ -7,9 +7,7 @@ A Node.js project that allows you to customize GitHub webhook notifications and 
 - Receive GitHub webhook events (e.g., push events).
 - Customize the appearance of the notifications sent to Discord.
 - Include commit details such as the author, commit message, and commit hash.
-- Display the author's GitHub profile picture and name in the embed.
 - Easy configuration via `config.js`.
-- Supports sending rich embed messages with custom colors, thumbnails, and footers.
 
 ## Prerequisites
 
