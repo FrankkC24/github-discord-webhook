@@ -1,23 +1,24 @@
 export const config = {
-    discordWebhookUrl: 'https://discord.com/api/webhooks/1293673857554583573/rikd5IkeSKfjVCIYFVctYggI8bRKUURuL1zkxeyx7JTGdeS_syQ0vo94Mq67Jbz4B9ws',
+    discordWebhookUrl: 'https://discord.com/api/webhooks/YOUR_WEBHOOK_ID/YOUR_WEBHOOK_TOKEN',
+    
     embedConfig: {
-      titleTemplate: 'Nuevo commit en {repoName}',
-      descriptionTemplate: '**Mensaje:** {message}',
-      color: '#7000FF', // HEX COLOR
+      titleTemplate: 'New commit in {repoName}',
+      descriptionTemplate: '**Message:** {message}\n**Commit:** `{shortCommitId}`',
+      color: '#7000FF',
       urlTemplate: '{url}',
       footer: {
-        text: 'ParadoxEmpire Network',
-        icon_url: 'https://i.imgur.com/9PYhLfx.png'
+        text: 'GitHub Webhook Notification',
+        icon_url: 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'
       },
       thumbnail: {
-        url: 'https://i.imgur.com/EE3fCBn.png'
+        url: 'https://example.com/path/to/your/thumbnail.png'
       }
     },
+  
     messages: {
       eventNotSupported: 'Event not supported or incomplete data',
-      notificationProcessed: 'Processed notification',
+      notificationProcessed: 'Notification processed',
       messageSent: 'Message sent to Discord',
-      messageError: 'Error sending the message to Discord:'
+      messageError: 'Error sending message to Discord:'
     }
   };
-  

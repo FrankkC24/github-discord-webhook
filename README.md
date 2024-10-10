@@ -46,7 +46,7 @@ Before setting up the project, ensure you have the following:
      
      embedConfig: {
        titleTemplate: 'New commit in {repoName}',
-       descriptionTemplate: '**Message:** {message}\n\n**Commit:** `{shortCommitId}`',
+       descriptionTemplate: '**Message:** {message}\n**Commit:** `{shortCommitId}`',
        color: '#7000FF',
        urlTemplate: '{url}',
        footer: {
